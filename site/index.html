@@ -1,0 +1,288 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Defestri</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link href='//fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+        
+        <!--[if lte IE 8]><script src="/static/new/js/html5shiv.js"></script><![endif]-->
+        
+        
+        <script type="text/javascript" src="/static/new/js/jquery.min.js"></script>
+        
+        <script type="text/javascript" src="/static/new/js/skel.min.js"></script>
+        
+        <script type="text/javascript" src="/static/new/js/skel-panels.min.js"></script>
+        
+        <script type="text/javascript" src="/static/new/js/init.js"></script>
+        
+        <script type="text/javascript" src="/static/new/js/mojibake.js"></script>
+        
+        
+        <script type="text/javascript" src="/static/js/moment.min.js"></script>
+        
+        <noscript>
+            
+            <link rel="stylesheet" href="/static/new/css/skel-noscript.css" type="text/css">
+            
+            <link rel="stylesheet" href="/static/new/css/style.css" type="text/css">
+            
+            <link rel="stylesheet" href="/static/new/css/style-wide.css" type="text/css">
+            
+        </noscript>
+        <link rel="stylesheet" href="/pygments.css" type="text/css">
+        
+        <!--[if lte IE 9]><link rel="stylesheet" href="/static/new/css/ie9.css" /><![endif]-->
+        
+        
+        <!--[if lte IE 8]><link rel="stylesheet" href="/static/new/css/ie8.css" /><![endif]-->
+        
+        <link rel="shortcut icon" type="image/png" href="static/favicon.ico"/>
+        <link href="/recent.atom"
+          rel="alternate"
+          title="Recent Posts"
+          type="application/atom+xml">
+    </head>
+    <body>
+
+            <div id="header" class="skel-panels-fixed">
+
+                <div class="top">
+
+                        <div id="logo">
+                            <a href="/"><h1 id="title">Defestri  <img src="/static/img/defestri.png" width="20" height="22" width="24" alt="Defestri"></h1></a>
+                            <span title="It often takes time to bear the fruit of one's actions" class="byline">桃栗三年柿八年</span>
+                        </div>
+
+                        <nav id="nav">
+                            <ul>
+                                <li><a href="/" id="home_tab"><span class="fa fa-home">Home</span></a></li>
+                                <li><a href="/about/" id="about_tab"><span class="fa fa-info">About</span></a></li>
+                                <li><a href="/posts/" id="posts_tab"><span class="fa fa-comment-o">Posts</span></a></li>
+                                <li><a href="/tags/" id="tags_tab"><span class="fa fa-tags">Tags</span></a></li>
+                                <li><a href="/archive/" id="archive_tab"><span class="fa fa-calendar">Archive</span></a></li>
+                            </ul>
+                            <ul>
+
+                                <li><a href="/categories/" id="categories_tab"><span class="fa fa-level-down"><h4>Post Categories</h4></span></a></li>
+                                
+                                <li>
+                                  <a href="/categories/Security/" id="Security_tab"><span class="fa fa-folder-open">Security</span></a>
+                                </li>
+                                
+
+                            </ul>
+                        </nav>
+
+                </div>
+
+                <div class="bottom">
+
+                        <ul class="icons">
+                            <li><a href="https://github.com/ardinor" class="fa fa-github solo"><span>Github</span></a></li>
+                            <li id="contact_tab"><a href="/contact/" class="fa fa-envelope solo"><span>Email</span></a></li>
+                            <li><a href="/recent.atom" class="fa fa-rss solo"><span>RSS</span></a></li>
+                        </ul>
+
+                </div>
+
+            </div>
+
+            <div id="main">
+
+                
+
+
+    
+<section id="posts" class="one">
+    <div class="container">
+
+        <header>
+            <a href="/posts/Revisiting_the_auth_log/"><h2 style="display: inline;">Revisiting the auth log</h2></a>
+
+        
+            <span style="padding-top: 10px;" class="pull-right">Posted under: <a href="/categories/Security/">Security</a></span>
+        
+        </header>
+
+        Posted by <a href="/about/">Jordan</a> on <script>
+document.write(moment("2013-12-03T01:43:24 Z").format("LLLL"));
+</script> - <em><script>
+document.write(moment("2013-12-03T01:43:24 Z").fromNow());
+</script></em>
+        
+            <span class="pull-right">Tagged: <a href="/tags/SSH/">SSH</a>, <a href="/tags/fail2ban/">fail2ban</a></span>
+        
+
+        <p><p>After about a month since my last update let's check our logs and see how the slightly stricter security measures are holding up.</p>
+<div class="codehilite"><pre><span class="n">Dec</span>  <span class="mi">2</span> <span class="mi">11</span><span class="o">:</span><span class="mi">28</span><span class="o">:</span><span class="mi">43</span> <span class="n">defestri</span> <span class="n">sshd</span><span class="p">[</span><span class="mi">26001</span><span class="p">]</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">user</span> <span class="n">administraator</span> <span class="n">from</span> <span class="mf">217.153.86.163</span>
+<span class="n">Dec</span>  <span class="mi">2</span> <span class="mi">11</span><span class="o">:</span><span class="mi">28</span><span class="o">:</span><span class="mi">43</span> <span class="n">defestri</span> <span class="n">sshd</span><span class="p">[</span><span class="mi">26003</span><span class="p">]</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">user</span> <span class="n">administrador</span> <span class="n">from</span> <span class="mf">217.153.86.163</span>
+<span class="n">Dec</span>  <span class="mi">2</span> <span class="mi">11</span><span class="o">:</span><span class="mi">28</span><span class="o">:</span><span class="mi">44</span> <span class="n">defestri</span> <span class="n">sshd</span><span class="p">[</span><span class="mi">26005</span><span class="p">]</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">user</span> <span class="n">administranto</span> <span class="n">from</span> <span class="mf">217.153.86.163</span>
+<span class="n">Dec</span>  <span class="mi">2</span> <span class="mi">11</span><span class="o">:</span><span class="mi">28</span><span class="o">:</span><span class="mi">44</span> <span class="n">defestri</span> <span class="n">sshd</span><span class="p">[</span><span class="mi">26007</span><span class="p">]</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">user</span> <span class="n">administrate</span> <span class="n">from</span> <span class="mf">217.153.86.163</span>
+<span class="n">Dec</span>  <span class="mi">2</span> <span class="mi">11</span><span class="o">:</span><span class="mi">28</span><span class="o">:</span><span class="mi">45</span> <span class="n">defestri</span> <span class="n">sshd</span><span class="p">[</span><span class="mi">26009</span><span class="p">]</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">user</span> <span class="n">administrateur</span> <span class="n">from</span> <span class="mf">217.153.86.163</span>
+<span class="n">Dec</span>  <span class="mi">2</span> <span class="mi">20</span><span class="o">:</span><span class="mi">31</span><span class="o">:</span><span class="mi">43</span> <span class="n">defestri</span> <span class="n">sshd</span><span class="p">[</span><span class="mi">26261</span><span class="p">]</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">user</span> <span class="n">lukas</span> <span class="n">from</span> <span class="mf">198.61.179.140</span>
+<span class="n">Dec</span>  <span class="mi">2</span> <span class="mi">20</span><span class="o">:</span><span class="mi">31</span><span class="o">:</span><span class="mi">44</span> <span class="n">defestri</span> <span class="n">sshd</span><span class="p">[</span><span class="mi">26263</span><span class="p">]</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">user</span> <span class="n">ottomar</span> <span class="n">from</span> <span class="mf">198.61.179.140</span>
+<span class="n">Dec</span>  <span class="mi">2</span> <span class="mi">20</span><span class="o">:</span><span class="mi">31</span><span class="o">:</span><span class="mi">45</span> <span class="n">defestri</span> <span class="n">sshd</span><span class="p">[</span><span class="mi">26265</span><span class="p">]</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">user</span> <span class="n">pankraz</span> <span class="n">from</span> <span class="mf">198.61.179.140</span>
+<span class="n">Dec</span>  <span class="mi">2</span> <span class="mi">20</span><span class="o">:</span><span class="mi">31</span><span class="o">:</span><span class="mi">46</span> <span class="n">defestri</span> <span class="n">sshd</span><span class="p">[</span><span class="mi">26267</span><span class="p">]</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">user</span> <span class="n">lucas</span> <span class="n">from</span> <span class="mf">198.61.179.140</span>
+<span class="n">Dec</span>  <span class="mi">2</span> <span class="mi">20</span><span class="o">:</span><span class="mi">56</span><span class="o">:</span><span class="mo">05</span> <span class="n">defestri</span> <span class="n">sshd</span><span class="p">[</span><span class="mi">27794</span><span class="p">]</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">user</span> <span class="n">pomelnic</span> <span class="n">from</span> <span class="mf">184.106.189.106</span>
+<span class="n">Dec</span>  <span class="mi">2</span> <span class="mi">20</span><span class="o">:</span><span class="mi">56</span><span class="o">:</span><span class="mi">51</span> <span class="n">defestri</span> <span class="n">sshd</span><span class="p">[</span><span class="mi">27854</span><span class="p">]</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">user</span> <span class="n">ram</span> <span class="n">from</span> <span class="mf">184.106.189.106</span>
+<span class="n">Dec</span>  <span class="mi">2</span> <span class="mi">20</span><span class="o">:</span><span class="mi">56</span><span class="o">:</span><span class="mi">52</span> <span class="n">defestri</span> <span class="n">sshd</span><span class="p">[</span><span class="mi">27856</span><span class="p">]</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">user</span> <span class="n">jake</span> <span class="n">from</span> <span class="mf">184.106.189.106</span>
+<span class="n">Dec</span>  <span class="mi">2</span> <span class="mi">21</span><span class="o">:</span><span class="mi">09</span><span class="o">:</span><span class="mi">22</span> <span class="n">defestri</span> <span class="n">sshd</span><span class="p">[</span><span class="mi">27868</span><span class="p">]</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">user</span> <span class="n">admin</span> <span class="n">from</span> <span class="mf">64.235.53.4</span>
+</pre></div>
+
+
+<p>As we can see there's still plenty of log in attempts coming in, although slightly less than last time. We can see how fail2ban is going by having a quick look at it's log.</p>
+<div class="codehilite"><pre><span class="mi">2013</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mo">02</span> <span class="mi">11</span><span class="o">:</span><span class="mi">28</span><span class="o">:</span><span class="mi">45</span><span class="p">,</span><span class="mi">147</span> <span class="n">fail2ban</span><span class="p">.</span><span class="n">actions</span><span class="o">:</span> <span class="n">WARNING</span> <span class="p">[</span><span class="n">ssh</span><span class="p">]</span> <span class="n">Ban</span> <span class="mf">217.153.86.163</span>
+<span class="mi">2013</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mo">02</span> <span class="mi">20</span><span class="o">:</span><span class="mi">31</span><span class="o">:</span><span class="mi">46</span><span class="p">,</span><span class="mi">725</span> <span class="n">fail2ban</span><span class="p">.</span><span class="n">actions</span><span class="o">:</span> <span class="n">WARNING</span> <span class="p">[</span><span class="n">ssh</span><span class="p">]</span> <span class="n">Ban</span> <span class="mf">198.61.179.140</span>
+<span class="mi">2013</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mo">02</span> <span class="mi">20</span><span class="o">:</span><span class="mi">56</span><span class="o">:</span><span class="mi">53</span><span class="p">,</span><span class="mi">357</span> <span class="n">fail2ban</span><span class="p">.</span><span class="n">actions</span><span class="o">:</span> <span class="n">WARNING</span> <span class="p">[</span><span class="n">ssh</span><span class="p">]</span> <span class="n">Ban</span> <span class="mf">184.106.189.106</span>
+</pre></div>
+
+
+<p>So we can see it has successfully banned the three IPs that have attempted to break in three or more times in the log.</p>
+<p>Out of curiousity I've written a parser to parse the auth.log and fail2ban.log and see not only the IPs (and the countries) these attempts are coming from but also the usernames they're trying to log in with. The files are up on my Github <a href="https://github.com/ardinor/misc/tree/master/auth-log%20parser">here</a> and the results of the parser are <a href="https://defestri.org/bans/">here</a>.</p>
+<p>The auth-log parser script basically looks through the log, pulling out attempts for the last month, checks the location of the attempts using <a href="http://www.ipinfodb.com/">ipinfodb's</a> API then uses jinja2 to output it into a HTML file.</p>
+<p>From here I'd like to get the auth-log parser to run as a cron job every month, parse the log in attempts from the previous month and output it to a page visable on this site. On the side of security however, next up I think I'll get fail2ban to monitor it's own log, banning people who have been banned multiple times before. Then we should hopefully have a more secure server.</p></p>
+
+
+    </div>
+</section>
+
+
+    
+        <div class="post-divider"></div>
+    
+
+
+
+    
+<section id="posts" class="one">
+    <div class="container">
+
+        <header>
+            <a href="/posts/SSH_fail2ban_and_iptables/"><h2 style="display: inline;">SSH, fail2ban &amp; iptables</h2></a>
+
+        
+            <span style="padding-top: 10px;" class="pull-right">Posted under: <a href="/categories/Security/">Security</a></span>
+        
+        </header>
+
+        Posted by <a href="/about/">Jordan</a> on <script>
+document.write(moment("2013-11-06T22:49:30 Z").format("LLLL"));
+</script> - <em><script>
+document.write(moment("2013-11-06T22:49:30 Z").fromNow());
+</script></em>
+        
+            <span class="pull-right">Tagged: <a href="/tags/SSH/">SSH</a>, <a href="/tags/fail2ban/">fail2ban</a>, <a href="/tags/iptables/">iptables</a></span>
+        
+
+        <p><p>So I've had this server for a little over a month now, and early on I set SSH up with key login to ensure no-one else can log in. After chatting with a friend about all the brute force attempts one of his servers is on the receiving end of I decided to take a look at the failed login attempts on mine.</p>
+<div class="codehilite"><pre>cat /var/log/auth.log | grep <span class="s1">&#39;sshd.*Invalid&#39;</span>
+</pre></div>
+
+
+<p>I was somewhat surprised to see the number of attempts on even a fairly new server. It doesn't take them long to find servers apparently!</p>
+<div class="codehilite"><pre><span class="n">Nov</span>  <span class="mi">6</span> <span class="mi">08</span><span class="o">:</span><span class="mo">03</span><span class="o">:</span><span class="mi">22</span> <span class="n">defestri</span> <span class="n">sshd</span><span class="p">[</span><span class="mi">31088</span><span class="p">]</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">user</span> <span class="n">apolline</span> <span class="n">from</span> <span class="mf">115.114.14.195</span>
+<span class="n">Nov</span>  <span class="mi">6</span> <span class="mi">08</span><span class="o">:</span><span class="mi">37</span><span class="o">:</span><span class="mi">11</span> <span class="n">defestri</span> <span class="n">sshd</span><span class="p">[</span><span class="mi">31107</span><span class="p">]</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">user</span> <span class="n">appolenia</span> <span class="n">from</span> <span class="mf">115.114.14.195</span>
+<span class="n">Nov</span>  <span class="mi">6</span> <span class="mi">09</span><span class="o">:</span><span class="mi">11</span><span class="o">:</span><span class="mo">00</span> <span class="n">defestri</span> <span class="n">sshd</span><span class="p">[</span><span class="mi">31121</span><span class="p">]</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">user</span> <span class="n">april</span> <span class="n">from</span> <span class="mf">115.114.14.195</span>
+<span class="n">Nov</span>  <span class="mi">6</span> <span class="mi">09</span><span class="o">:</span><span class="mi">45</span><span class="o">:</span><span class="mi">21</span> <span class="n">defestri</span> <span class="n">sshd</span><span class="p">[</span><span class="mi">31140</span><span class="p">]</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">user</span> <span class="n">ar</span> <span class="n">from</span> <span class="mf">115.114.14.195</span>
+<span class="n">Nov</span>  <span class="mi">6</span> <span class="mi">10</span><span class="o">:</span><span class="mi">20</span><span class="o">:</span><span class="mi">17</span> <span class="n">defestri</span> <span class="n">sshd</span><span class="p">[</span><span class="mi">31156</span><span class="p">]</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">user</span> <span class="n">arabella</span> <span class="n">from</span> <span class="mf">115.114.14.195</span>
+<span class="n">Nov</span>  <span class="mi">6</span> <span class="mi">10</span><span class="o">:</span><span class="mi">55</span><span class="o">:</span><span class="mo">07</span> <span class="n">defestri</span> <span class="n">sshd</span><span class="p">[</span><span class="mi">31175</span><span class="p">]</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">user</span> <span class="n">araceli</span> <span class="n">from</span> <span class="mf">115.114.14.195</span>
+<span class="n">Nov</span>  <span class="mi">6</span> <span class="mi">11</span><span class="o">:</span><span class="mi">29</span><span class="o">:</span><span class="mi">26</span> <span class="n">defestri</span> <span class="n">sshd</span><span class="p">[</span><span class="mi">31261</span><span class="p">]</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">user</span> <span class="n">arao</span> <span class="n">from</span> <span class="mf">115.114.14.195</span>
+<span class="n">Nov</span>  <span class="mi">6</span> <span class="mi">12</span><span class="o">:</span><span class="mo">03</span><span class="o">:</span><span class="mi">37</span> <span class="n">defestri</span> <span class="n">sshd</span><span class="p">[</span><span class="mi">31282</span><span class="p">]</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">user</span> <span class="n">arcadia</span> <span class="n">from</span> <span class="mf">115.114.14.195</span>
+<span class="n">Nov</span>  <span class="mi">6</span> <span class="mi">12</span><span class="o">:</span><span class="mi">38</span><span class="o">:</span><span class="mi">09</span> <span class="n">defestri</span> <span class="n">sshd</span><span class="p">[</span><span class="mi">31301</span><span class="p">]</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">user</span> <span class="n">ardelle</span> <span class="n">from</span> <span class="mf">115.114.14.195</span>
+<span class="n">Nov</span>  <span class="mi">6</span> <span class="mi">13</span><span class="o">:</span><span class="mi">12</span><span class="o">:</span><span class="mi">18</span> <span class="n">defestri</span> <span class="n">sshd</span><span class="p">[</span><span class="mi">31317</span><span class="p">]</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">user</span> <span class="n">ardis</span> <span class="n">from</span> <span class="mf">115.114.14.195</span>
+<span class="n">Nov</span>  <span class="mi">6</span> <span class="mi">13</span><span class="o">:</span><span class="mi">46</span><span class="o">:</span><span class="mi">16</span> <span class="n">defestri</span> <span class="n">sshd</span><span class="p">[</span><span class="mi">31334</span><span class="p">]</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">user</span> <span class="n">aretha</span> <span class="n">from</span> <span class="mf">115.114.14.195</span>
+<span class="n">Nov</span>  <span class="mi">6</span> <span class="mi">14</span><span class="o">:</span><span class="mi">19</span><span class="o">:</span><span class="mi">53</span> <span class="n">defestri</span> <span class="n">sshd</span><span class="p">[</span><span class="mi">31350</span><span class="p">]</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">user</span> <span class="n">aretina</span> <span class="n">from</span> <span class="mf">115.114.14.195</span>
+<span class="n">Nov</span>  <span class="mi">6</span> <span class="mi">14</span><span class="o">:</span><span class="mi">53</span><span class="o">:</span><span class="mi">42</span> <span class="n">defestri</span> <span class="n">sshd</span><span class="p">[</span><span class="mi">31369</span><span class="p">]</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">user</span> <span class="n">ari</span> <span class="n">from</span> <span class="mf">115.114.14.195</span>
+<span class="n">Nov</span>  <span class="mi">6</span> <span class="mi">15</span><span class="o">:</span><span class="mi">27</span><span class="o">:</span><span class="mi">43</span> <span class="n">defestri</span> <span class="n">sshd</span><span class="p">[</span><span class="mi">31385</span><span class="p">]</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">user</span> <span class="n">aria</span> <span class="n">from</span> <span class="mf">115.114.14.195</span>
+<span class="n">Nov</span>  <span class="mi">6</span> <span class="mi">16</span><span class="o">:</span><span class="mo">01</span><span class="o">:</span><span class="mi">42</span> <span class="n">defestri</span> <span class="n">sshd</span><span class="p">[</span><span class="mi">31402</span><span class="p">]</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">user</span> <span class="n">ariadne</span> <span class="n">from</span> <span class="mf">115.114.14.195</span>
+<span class="n">Nov</span>  <span class="mi">6</span> <span class="mi">16</span><span class="o">:</span><span class="mi">35</span><span class="o">:</span><span class="mi">39</span> <span class="n">defestri</span> <span class="n">sshd</span><span class="p">[</span><span class="mi">31421</span><span class="p">]</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">user</span> <span class="n">ariana</span> <span class="n">from</span> <span class="mf">115.114.14.195</span>
+<span class="n">Nov</span>  <span class="mi">6</span> <span class="mi">22</span><span class="o">:</span><span class="mo">03</span><span class="o">:</span><span class="mi">31</span> <span class="n">defestri</span> <span class="n">sshd</span><span class="p">[</span><span class="mi">31721</span><span class="p">]</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">user</span> <span class="n">oracle</span> <span class="n">from</span> <span class="mf">74.63.200.36</span>
+<span class="n">Nov</span>  <span class="mi">6</span> <span class="mi">22</span><span class="o">:</span><span class="mo">03</span><span class="o">:</span><span class="mi">33</span> <span class="n">defestri</span> <span class="n">sshd</span><span class="p">[</span><span class="mi">31723</span><span class="p">]</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">user</span> <span class="n">oracle</span> <span class="n">from</span> <span class="mf">74.63.200.36</span>
+<span class="n">Nov</span>  <span class="mi">6</span> <span class="mi">22</span><span class="o">:</span><span class="mo">03</span><span class="o">:</span><span class="mi">34</span> <span class="n">defestri</span> <span class="n">sshd</span><span class="p">[</span><span class="mi">31725</span><span class="p">]</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">user</span> <span class="n">oracle</span> <span class="n">from</span> <span class="mf">74.63.200.36</span>
+</pre></div>
+
+
+<p>I have of course set up fail2ban which on the default settings, bans them after six failed attempts for one hour. But it seems this lot are pretty persistent. First up, let's harden fail2ban a bit, reduce the number of failed attempts to three and increase the ban time to one day.</p>
+<div class="codehilite"><pre><span class="n">sudo</span> <span class="n">nano</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">fail2ban</span><span class="o">/</span><span class="n">jail</span><span class="p">.</span><span class="n">local</span>
+</pre></div>
+
+
+<p>Scroll down to the section with bantime and maxretry and set as:</p>
+<div class="codehilite"><pre><span class="cp"># ban time 24 hours</span>
+<span class="n">bantime</span> <span class="o">=</span> <span class="mi">86400</span>
+<span class="n">maxretry</span> <span class="o">=</span> <span class="mi">3</span>
+</pre></div>
+
+
+<p>Scroll down to the ssh section as well and set it to three maximum retries:</p>
+<div class="codehilite"><pre><span class="k">[ssh]</span>
+<span class="na">enabled</span> <span class="o">=</span> <span class="s">true</span>
+<span class="na">port</span> <span class="o">=</span> <span class="s">ssh</span>
+<span class="na">filter</span> <span class="o">=</span> <span class="s">sshd</span>
+<span class="na">logpath</span> <span class="o">=</span> <span class="s">/var/log/auth.log</span>
+<span class="na">maxtry</span> <span class="o">=</span> <span class="s">3</span>
+</pre></div>
+
+
+<p>Then finally restart fail2ban.</p>
+<div class="codehilite"><pre>sudo service fail2ban restart
+</pre></div>
+
+
+<p>Now that that's taken care of, let's take it one further step. We can see there's one IP (115.114.14.195, an Indian IP) that seems to have taken a likening to trying and brute forcing it's way in. Let's just ban him at the kernal firewall instead.</p>
+<p>Let's first open up the existing test rules for iptables (if you have any):</p>
+<div class="codehilite"><pre><span class="n">sudo</span> <span class="n">nano</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">iptables</span><span class="p">.</span><span class="n">test</span><span class="p">.</span><span class="n">rules</span>
+</pre></div>
+
+
+<p>And let's make a new section for banned IPs:</p>
+<div class="codehilite"><pre><span class="cp">## Banned IPs</span>
+<span class="o">-</span><span class="n">A</span> <span class="n">INPUT</span> <span class="o">-</span><span class="n">s</span> <span class="mf">115.114.14.195</span> <span class="o">-</span><span class="n">j</span> <span class="n">DROP</span>
+<span class="o">-</span><span class="n">A</span> <span class="n">OUTPUT</span> <span class="o">-</span><span class="n">d</span> <span class="mf">115.114.14.195</span> <span class="o">-</span><span class="n">j</span> <span class="n">DROP</span>
+</pre></div>
+
+
+<p>Then double check how it looks:</p>
+<div class="codehilite"><pre><span class="n">sudo</span> <span class="n">iptables</span> <span class="o">-</span><span class="n">L</span>
+</pre></div>
+
+
+<p>If that looks okay we'll save it to the master iptables file:</p>
+<div class="codehilite"><pre><span class="n">sudo</span> <span class="n">sh</span> <span class="o">-</span><span class="n">c</span> <span class="s">&quot;iptables-save &gt; /etc/iptables.up.rules&quot;</span>
+</pre></div>
+
+
+<p>That ought to keep him out. Funnily enough my friend had log in attempts from the same IP. Whoever it is they certainly get around.</p>
+<p>Obviously moving SSH to a different port would stop some of these casual attempts at finding open SSH services but let's leave SSH where it is for the time being to ensure these changes workout as intended.</p></p>
+
+
+    </div>
+</section>
+
+
+    
+
+
+
+
+
+
+
+            </div>
+
+    
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46303127-1', 'defestri.org');
+  ga('send', 'pageview');
+    </script>
+    
+    </body>
+</html>
