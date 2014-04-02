@@ -1,74 +1,109 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Defestri - Posts</title>
-    <meta name="description" content="">
-    <meta name="author" content="https://github.com/ardinor">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Defestri - Posts</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link href='//fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+        
+        <!--[if lte IE 8]><script src="/static/js/html5shiv.js"></script><![endif]-->
+        
+        
+        <script type="text/javascript" src="/static/js/moment.min.js"></script>
+        
+        
+        <link rel="stylesheet" href="/static/css/skel-noscript.css" type="text/css">
+        
+        <link rel="stylesheet" href="/static/css/style.css" type="text/css">
+        
+        <link rel="stylesheet" href="/static/css/style-wide.css" type="text/css">
+        
+        <link rel="stylesheet" href="/pygments.css" type="text/css">
+        
+        <!--[if lte IE 9]><link rel="stylesheet" href="/static/css/ie9.css" /><![endif]-->
+        
+        
+        <!--[if lte IE 8]><link rel="stylesheet" href="/static/css/ie8.css" /><![endif]-->
+        
+        <link rel="shortcut icon" type="image/png" href="static/favicon.ico"/>
+        <link href="/recent.atom"
+          rel="alternate"
+          title="Recent Posts"
+          type="application/atom+xml">
+    </head>
+    <body>
+
+            <div id="header" class="skel-panels-fixed">
+
+                <div class="top">
+
+                        <div id="logo">
+                            <a href="/"><h1 id="title">Defestri  <img src="/static/img/defestri.png" width="20" height="22" width="24" alt="Defestri"></h1></a>
+                            <span title="It often takes time to bear the fruit of one's actions" class="byline">桃栗三年柿八年</span>
+                        </div>
+
+                        <nav id="nav">
+                            <ul>
+                                <li><a href="/" id="home_tab"><span class="fa fa-home">Home</span></a></li>
+                                <li><a href="/about/" id="about_tab"><span class="fa fa-info">About</span></a></li>
+                                <li><a href="/posts/" id="posts_tab"><span class="fa fa-comment-o">Posts</span></a></li>
+                                <li><a href="/tags/" id="tags_tab"><span class="fa fa-tags">Tags</span></a></li>
+                                <li><a href="/archive/" id="archive_tab"><span class="fa fa-calendar">Archive</span></a></li>
+                            </ul>
+                            <ul>
+
+                                <li><a href="/categories/" id="categories_tab"><span class="fa fa-level-down"><h4>Post Categories</h4></span></a></li>
+                                
+                                <li>
+                                  <a href="/categories/Security/" id="Security_tab"><span class="fa fa-folder-open">Security</span></a>
+                                </li>
+                                
+
+                            </ul>
+                        </nav>
+
+                </div>
+
+                <div class="bottom">
+
+                        <ul class="icons">
+                            <li><a href="https://github.com/ardinor" class="fa fa-github solo"><span>Github</span></a></li>
+                            <li id="contact_tab"><a href="/contact/" class="fa fa-envelope solo"><span>Email</span></a></li>
+                            <li><a href="/recent.atom" class="fa fa-rss solo"><span>RSS</span></a></li>
+                        </ul>
+
+                </div>
+
+            </div>
+
+            <div id="main">
+
+                
+
+
     
-    <link rel="stylesheet" href="/static/css/bootstrap.min.css" type="text/css">
-    
-    <link rel="stylesheet" href="/static/css/mojibake.css" type="text/css">
-    
-    <link rel="stylesheet" href="/pygments.css" type="text/css">
-    
-    <script type="text/javascript" src="/static/js/moment.min.js"></script>
-    
-    <link href="/recent.atom"
-      rel="alternate"
-      title="Recent Posts"
-      type="application/atom+xml">
-  </head>
-  <body>
-      <nav class="navbar navbar-default navbar-fixed-top" style="height: 3px;" role="navigation">
-        <div class="navbar-header">
-          <a href="#" class="navbar-brand">Defestri  - Posts</a>
-        </div>
-      </nav>
+<section id="posts" class="one">
     <div class="container">
-      <noscript>
-        <!-- Change to a modal? Too annoying? -->
-        <div class="alert alert-danger text-center">
-          This site uses some Javascript, please enable Javascript.
-        </div>
-      </noscript>
-      <!--<div class="row">
-        <div class="col-lg-4 col-lg-offset-3 text-center header">
-            <h4><em>Defestri  block header  endblock </em></h4>
-        </div>
-      </div> -->
-      <div class="row">
-        <div class="col-lg-10 col-md-10 "> <!-- bg-white-->
 
-          
+        <header>
+            <a href="/posts/Revisiting_the_auth_log/"><h2 style="display: inline;">Revisiting the auth log</h2></a>
 
+        
+            <span style="padding-top: 10px;" class="pull-right">Posted under: <a href="/categories/Security/">Security</a></span>
+        
+        </header>
 
-    
-<div class="panel panel-default post-header panel-shadow">
-        <div class="panel-heading">
-            <a href="/posts/Revisiting_the_auth_log/">
-                <h3 style="display: inline;">Revisiting the auth log</h3>
-            </a>
-            
-            <span style="padding-top: 5px;" class="pull-right">Posted under: <a href="/categories/Security/">Security</a></span>
-            
-        </div>
-        <div class="panel-body">
-            Posted by <a href="/about/">Jordan Moeser</a> on <script>
+        Posted by <a href="/about/">Jordan</a> on <script>
 document.write(moment("2013-12-03T01:43:24 Z").format("LLLL"));
 </script> - <em><script>
 document.write(moment("2013-12-03T01:43:24 Z").fromNow());
-</script>.</em>
-            
-                <span class="pull-right">Tagged: <a href="/tags/SSH/">SSH</a>, <a href="/tags/fail2ban/">fail2ban</a></span>
-            
-            <hr>
+</script></em>
+        
+            <span class="pull-right">Tagged: <a href="/tags/SSH/">SSH</a>, <a href="/tags/fail2ban/">fail2ban</a></span>
+        
 
-    <!-- Add a space or divider in here? -->
-    
-    <p>
-        <p>After about a month since my last update let's check our logs and see how the slightly stricter security measures are holding up.</p>
+        <p><p>After about a month since my last update let's check our logs and see how the slightly stricter security measures are holding up.</p>
 <div class="codehilite"><pre><span class="n">Dec</span>  <span class="mi">2</span> <span class="mi">11</span><span class="o">:</span><span class="mi">28</span><span class="o">:</span><span class="mi">43</span> <span class="n">defestri</span> <span class="n">sshd</span><span class="p">[</span><span class="mi">26001</span><span class="p">]</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">user</span> <span class="n">administraator</span> <span class="n">from</span> <span class="mf">217.153.86.163</span>
 <span class="n">Dec</span>  <span class="mi">2</span> <span class="mi">11</span><span class="o">:</span><span class="mi">28</span><span class="o">:</span><span class="mi">43</span> <span class="n">defestri</span> <span class="n">sshd</span><span class="p">[</span><span class="mi">26003</span><span class="p">]</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">user</span> <span class="n">administrador</span> <span class="n">from</span> <span class="mf">217.153.86.163</span>
 <span class="n">Dec</span>  <span class="mi">2</span> <span class="mi">11</span><span class="o">:</span><span class="mi">28</span><span class="o">:</span><span class="mi">44</span> <span class="n">defestri</span> <span class="n">sshd</span><span class="p">[</span><span class="mi">26005</span><span class="p">]</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">user</span> <span class="n">administranto</span> <span class="n">from</span> <span class="mf">217.153.86.163</span>
@@ -94,42 +129,42 @@ document.write(moment("2013-12-03T01:43:24 Z").fromNow());
 
 <p>So we can see it has successfully banned the three IPs that have attempted to break in three or more times in the log.</p>
 <p>Out of curiousity I've written a parser to parse the auth.log and fail2ban.log and see not only the IPs (and the countries) these attempts are coming from but also the usernames they're trying to log in with. The files are up on my Github <a href="https://github.com/ardinor/misc/tree/master/auth-log%20parser">here</a> and the results of the parser are <a href="https://defestri.org/bans/">here</a>.</p>
-<p>The auth-log parser script basically looks through the log, pulling out attempts for the last month, checks the location of the attempts using <a href="http://www.ipinfodb.com/">ipinfodb's</a> API then uses jinja2 to output it into a HTML file.</p>
-<p>From here I'd like to get the auth-log parser to run as a cron job every month, parse the log in attempts from the previous month and output it to a page visable on this site. On the side of security however, next up I think I'll get fail2ban to monitor it's own log, banning people who have been banned multiple times before. Then we should hopefully have a more secure server.</p>
-    </p>
-        </div>
+<p>The auth-log parser script basically looks through the log, pulling out attempts for the last month, checks the location of the attempts using <a href="http://www.ipinfodb.com/">ipinfodb's</a> API then uses <a href="http://jinja.pocoo.org/docs/">jinja2</a> to output it into a HTML file.</p>
+<p>From here I'd like to get the auth-log parser to run as a cron job every month, parse the log in attempts from the previous month and output it to a page visable on this site. On the side of security however, next up I think I'll get fail2ban to monitor it's own log, banning people who have been banned multiple times before. Then we should hopefully have a more secure server.</p></p>
+
+
     </div>
-    <p> </p>
+</section>
+
+
+    
+        <div class="post-divider"></div>
     
 
 
 
-
     
-<div class="panel panel-default post-header panel-shadow">
-        <div class="panel-heading">
-            <a href="/posts/SSH_fail2ban_and_iptables/">
-                <h3 style="display: inline;">SSH, fail2ban &amp; iptables</h3>
-            </a>
-            
-            <span style="padding-top: 5px;" class="pull-right">Posted under: <a href="/categories/Security/">Security</a></span>
-            
-        </div>
-        <div class="panel-body">
-            Posted by <a href="/about/">Jordan Moeser</a> on <script>
+<section id="posts" class="one">
+    <div class="container">
+
+        <header>
+            <a href="/posts/SSH_fail2ban_and_iptables/"><h2 style="display: inline;">SSH, fail2ban &amp; iptables</h2></a>
+
+        
+            <span style="padding-top: 10px;" class="pull-right">Posted under: <a href="/categories/Security/">Security</a></span>
+        
+        </header>
+
+        Posted by <a href="/about/">Jordan</a> on <script>
 document.write(moment("2013-11-06T22:49:30 Z").format("LLLL"));
 </script> - <em><script>
 document.write(moment("2013-11-06T22:49:30 Z").fromNow());
-</script>.</em>
-            
-                <span class="pull-right">Tagged: <a href="/tags/SSH/">SSH</a>, <a href="/tags/fail2ban/">fail2ban</a>, <a href="/tags/iptables/">iptables</a></span>
-            
-            <hr>
+</script></em>
+        
+            <span class="pull-right">Tagged: <a href="/tags/SSH/">SSH</a>, <a href="/tags/fail2ban/">fail2ban</a>, <a href="/tags/iptables/">iptables</a></span>
+        
 
-    <!-- Add a space or divider in here? -->
-    
-    <p>
-        <p>So I've had this server for a little over a month now, and early on I set SSH up with key login to ensure no-one else can log in. After chatting with a friend about all the brute force attempts one of his servers is on the receiving end of I decided to take a look at the failed login attempts on mine.</p>
+        <p><p>So I've had this server for a little over a month now, and early on I set SSH up with key login to ensure no-one else can log in. After chatting with a friend about all the brute force attempts one of his servers is on the receiving end of I decided to take a look at the failed login attempts on mine.</p>
 <div class="codehilite"><pre>cat /var/log/auth.log | grep <span class="s1">&#39;sshd.*Invalid&#39;</span>
 </pre></div>
 
@@ -208,11 +243,13 @@ document.write(moment("2013-11-06T22:49:30 Z").fromNow());
 
 
 <p>That ought to keep him out. Funnily enough my friend had log in attempts from the same IP. Whoever it is they certainly get around.</p>
-<p>Obviously moving SSH to a different port would stop some of these casual attempts at finding open SSH services but let's leave SSH where it is for the time being to ensure these changes workout as intended.</p>
-    </p>
-        </div>
+<p>Obviously moving SSH to a different port would stop some of these casual attempts at finding open SSH services but let's leave SSH where it is for the time being to ensure these changes workout as intended.</p></p>
+
+
     </div>
-    <p> </p>
+</section>
+
+
     
 
 
@@ -221,51 +258,17 @@ document.write(moment("2013-11-06T22:49:30 Z").fromNow());
 
 
 
-        </div>
-        <div class="col-lg-2 col-md-2 text-center right-column">
-
-          <ul class="nav nav-pills nav-stacked">
-            <li class="active" id="home_tab">
-              <a href="/"><h4>Defestri</h4></a>
-            </li>
-            <li id="about_tab">
-              <a href="/about/">About</a>
-            </li>
-            <li id="posts_tab">
-              <a href="/posts/">Posts</a>
-            </li>
-            <li id="tags_tab">
-              <a href="/tags/">Tags</a>
-            </li>
-            <li id="archive_tab">
-              <a href="/archive/">Archive</a>
-            </li>
-            <li style="padding-top: 20px;" id="categories_tab">
-              <a href="/categories/" style="text-decoration: underline">Post Categories</a>
-            </li>
-            
-            <li class="" id="">
-              <a style="padding: 0px;" href="/categories/Security/"><small>Security</small></a>
-            </li>
-            
-            <li style="padding-top: 15px;" >
-              <a href="https://github.com/ardinor"><img alt="Link to my Github" title="My Github" src="/static/img/GitHub-Mark-32px.png"/></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <hr>
-      <footer>
-        <div class="row">
-          <div class="col-lg-12 col-md-12">
-            <p>Built using <a href="https://github.com/ardinor/mojibake-flat">MØjibДĸe-Flat</a> and <a href="http://flask.pocoo.org">Flask</a><span class="pull-right">MMXIV</span></p>
-          </div>
-        </div>
-      </footer>
-    </div>
+            </div>
     
-    <script type="text/javascript" src="/static/gen/packed.js?0fb908f6"></script>
+    <script type="text/javascript" src="/static/js/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="/static/js/skel.min.js"></script>
+    
+    <script type="text/javascript" src="/static/js/skel-panels.min.js"></script>
+    
+    <script type="text/javascript" src="/static/js/init.js"></script>
+    
+    <script type="text/javascript" src="/static/js/mojibake.js"></script>
     
     
     <script>
@@ -278,5 +281,5 @@ document.write(moment("2013-11-06T22:49:30 Z").fromNow());
   ga('send', 'pageview');
     </script>
     
-  </body>
+    </body>
 </html>
